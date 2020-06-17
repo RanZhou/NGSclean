@@ -415,6 +415,10 @@ def write_shell_summary(file_shell_str, final_log, trim_log, star_prefix):
     file_shell.write(
         'grep "MARKER" ' + star_prefix + 'Aligned.out.sam |grep -v "^@"|grep "MARKER_NPT"|cut -f 1|sort|uniq|wc -l' +
         '>>' + final_log + "\n\n")
+    file_shell.write('printf "IRP : " >>' + final_log + "\n")
+    file_shell.write(
+        'grep "MARKER" ' + star_prefix + 'Aligned.out.sam |grep -v "^@"|grep "MARKER_IRP"|cut -f 1|sort|uniq|wc -l' +
+        '>>' + final_log + "\n")
     file_shell.close()
 
 

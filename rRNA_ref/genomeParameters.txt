@@ -1,6 +1,6 @@
-### /usr/local/apps/eb/STAR/2.5.3a-foss-2016b/bin/STAR   --runMode genomeGenerate   --runThreadN 2   --genomeDir rRNA_ref   --genomeFastaFiles /scratch/twh58439/NGSclean/rRNA_only_NR.fas      --genomeSAindexNbases 4   --genomeChrBinNbits 10
+### /usr/local/apps/eb/STAR/2.5.3a-foss-2016b/bin/STAR   --runMode genomeGenerate   --runThreadN 2   --genomeDir rRNA_ref   --genomeFastaFiles /scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas      --genomeSAindexNbases 4   --genomeChrBinNbits 10
 versionGenome	20201
-genomeFastaFiles	/scratch/twh58439/NGSclean/rRNA_only_NR.fas 
+genomeFastaFiles	/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas 
 genomeSAindexNbases	4
 genomeChrBinNbits	10
 genomeSAsparseD	1
@@ -12,4 +12,4 @@ sjdbGTFfeatureExon	exon
 sjdbGTFtagExonParentTranscript	transcript_id
 sjdbGTFtagExonParentGene	gene_id
 sjdbInsertSave	Basic
-genomeFileSizes	430080 2691648
+genomeFileSizes	432128 2702415

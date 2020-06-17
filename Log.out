@@ -1,0 +1,548 @@
+STAR version=STAR_2.5.3a
+STAR compilation time,server,dir=Fri Dec 8 11:36:00 EST 2017 build2.gacrc.uga.edu:/dev/shm/shtsai/STAR/2.5.3a/foss-2016b/STAR-2.5.3a/source
+##### DEFAULT parameters:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           alignReads
+runThreadN                        1
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         ./GenomeDir/
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  -   
+genomeChainFiles                  -   
+genomeSAindexNbases               14
+genomeChrBinNbits                 18
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+readFilesIn                       Read1   Read2   
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1000000
+outFileNamePrefix                 ./
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           10
+chimJunctionOverhangMin           20
+chimOutType                       SeparateSAMold   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       None
+##### Command Line:
+/usr/local/apps/eb/STAR/2.5.3a-foss-2016b/bin/STAR --runThreadN 2 --runMode genomeGenerate --genomeDir rRNA_ref --genomeChrBinNbits 10 --genomeSAindexNbases 4 --genomeFastaFiles /scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+runThreadN                    2     ~RE-DEFINED
+runMode                       genomeGenerate     ~RE-DEFINED
+genomeDir                     rRNA_ref     ~RE-DEFINED
+genomeChrBinNbits             10     ~RE-DEFINED
+genomeSAindexNbases           4     ~RE-DEFINED
+genomeFastaFiles              /scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runMode                           genomeGenerate
+runThreadN                        2
+genomeDir                         rRNA_ref
+genomeFastaFiles                  /scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas   
+genomeSAindexNbases               4
+genomeChrBinNbits                 10
+
+-------------------------------
+##### Final effective command line:
+/usr/local/apps/eb/STAR/2.5.3a-foss-2016b/bin/STAR   --runMode genomeGenerate   --runThreadN 2   --genomeDir rRNA_ref   --genomeFastaFiles /scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas      --genomeSAindexNbases 4   --genomeChrBinNbits 10
+
+##### Final parameters after user input--------------------------------:
+versionSTAR                       20201
+versionGenome                     20101   20200   
+parametersFiles                   -   
+sysShell                          -
+runMode                           genomeGenerate
+runThreadN                        2
+runDirPerm                        User_RWX
+runRNGseed                        777
+genomeDir                         rRNA_ref
+genomeLoad                        NoSharedMemory
+genomeFastaFiles                  /scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas   
+genomeChainFiles                  -   
+genomeSAindexNbases               4
+genomeChrBinNbits                 10
+genomeSAsparseD                   1
+genomeSuffixLengthMax             18446744073709551615
+genomeFileSizes                   0   
+readFilesIn                       Read1   Read2   
+readFilesCommand                  -   
+readMatesLengthsIn                NotEqual
+readMapNumber                     18446744073709551615
+readNameSeparator                 /   
+inputBAMfile                      -
+bamRemoveDuplicatesType           -
+bamRemoveDuplicatesMate2basesN    0
+limitGenomeGenerateRAM            31000000000
+limitIObufferSize                 150000000
+limitOutSAMoneReadBytes           100000
+limitOutSJcollapsed               1000000
+limitOutSJoneRead                 1000
+limitBAMsortRAM                   0
+limitSjdbInsertNsj                1000000
+outFileNamePrefix                 ./
+outTmpDir                         -
+outTmpKeep                        None
+outStd                            Log
+outReadsUnmapped                  None
+outQSconversionAdd                0
+outMultimapperOrder               Old_2.4
+outSAMtype                        SAM   
+outSAMmode                        Full
+outSAMstrandField                 None
+outSAMattributes                  Standard   
+outSAMunmapped                    None   
+outSAMorder                       Paired
+outSAMprimaryFlag                 OneBestScore
+outSAMreadID                      Standard
+outSAMmapqUnique                  255
+outSAMflagOR                      0
+outSAMflagAND                     65535
+outSAMattrRGline                  -   
+outSAMheaderHD                    -   
+outSAMheaderPG                    -   
+outSAMheaderCommentFile           -
+outBAMcompression                 1
+outBAMsortingThreadN              0
+outSAMfilter                      None   
+outSAMmultNmax                    18446744073709551615
+outSAMattrIHstart                 1
+outSJfilterReads                  All
+outSJfilterCountUniqueMin         3   1   1   1   
+outSJfilterCountTotalMin          3   1   1   1   
+outSJfilterOverhangMin            30   12   12   12   
+outSJfilterDistToOtherSJmin       10   0   5   10   
+outSJfilterIntronMaxVsReadN       50000   100000   200000   
+outWigType                        None   
+outWigStrand                      Stranded   
+outWigReferencesPrefix            -
+outWigNorm                        RPM   
+outFilterType                     Normal
+outFilterMultimapNmax             10
+outFilterMultimapScoreRange       1
+outFilterScoreMin                 0
+outFilterScoreMinOverLread        0.66
+outFilterMatchNmin                0
+outFilterMatchNminOverLread       0.66
+outFilterMismatchNmax             10
+outFilterMismatchNoverLmax        0.3
+outFilterMismatchNoverReadLmax    1
+outFilterIntronMotifs             None
+clip5pNbases                      0   
+clip3pNbases                      0   
+clip3pAfterAdapterNbases          0   
+clip3pAdapterSeq                  -   
+clip3pAdapterMMp                  0.1   
+winBinNbits                       16
+winAnchorDistNbins                9
+winFlankNbins                     4
+winAnchorMultimapNmax             50
+winReadCoverageRelativeMin        0.5
+winReadCoverageBasesMin           0
+scoreGap                          0
+scoreGapNoncan                    -8
+scoreGapGCAG                      -4
+scoreGapATAC                      -8
+scoreStitchSJshift                1
+scoreGenomicLengthLog2scale       -0.25
+scoreDelBase                      -2
+scoreDelOpen                      -2
+scoreInsOpen                      -2
+scoreInsBase                      -2
+seedSearchLmax                    0
+seedSearchStartLmax               50
+seedSearchStartLmaxOverLread      1
+seedPerReadNmax                   1000
+seedPerWindowNmax                 50
+seedNoneLociPerWindow             10
+seedMultimapNmax                  10000
+alignIntronMin                    21
+alignIntronMax                    0
+alignMatesGapMax                  0
+alignTranscriptsPerReadNmax       10000
+alignSJoverhangMin                5
+alignSJDBoverhangMin              3
+alignSJstitchMismatchNmax         0   -1   0   0   
+alignSplicedMateMapLmin           0
+alignSplicedMateMapLminOverLmate    0.66
+alignWindowsPerReadNmax           10000
+alignTranscriptsPerWindowNmax     100
+alignEndsType                     Local
+alignSoftClipAtReferenceEnds      Yes
+alignEndsProtrude                 0   ConcordantPair   
+chimSegmentMin                    0
+chimScoreMin                      0
+chimScoreDropMax                  20
+chimScoreSeparation               10
+chimScoreJunctionNonGTAG          -1
+chimMainSegmentMultNmax           10
+chimJunctionOverhangMin           20
+chimOutType                       SeparateSAMold   
+chimFilter                        banGenomicN   
+chimSegmentReadGapMax             0
+sjdbFileChrStartEnd               -   
+sjdbGTFfile                       -
+sjdbGTFchrPrefix                  -
+sjdbGTFfeatureExon                exon
+sjdbGTFtagExonParentTranscript    transcript_id
+sjdbGTFtagExonParentGene          gene_id
+sjdbOverhang                      100
+sjdbScore                         2
+sjdbInsertSave                    Basic
+quantMode                         -   
+quantTranscriptomeBAMcompression    1
+quantTranscriptomeBan             IndelSoftclipSingleend
+twopass1readsN                    18446744073709551615
+twopassMode                       None
+----------------------------------------
+
+Finished loading and checking parameters
+Jun 11 13:15:51 ... starting to generate Genome files
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 0  "MARKER_NPT" chrStart: 0
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 1  "MARKER_HPT" chrStart: 1024
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 2  "MARKER_IRP" chrStart: 3072
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 3  "AARH01020936.3.2126_1" chrStart: 5120
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 4  "AC213083.120722.123721_1" chrStart: 8192
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 5  "AC208048.34124.37034_1" chrStart: 11264
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 6  "AP008956.132523.135331_1" chrStart: 14336
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 7  "AP008956.105793.108601_1" chrStart: 17408
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 8  "AY029747.1768.4603_1" chrStart: 20480
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 9  "EF489041.133056.135864_1" chrStart: 23552
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 10  "EF489041.106299.109107_1" chrStart: 26624
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 11  "Mit.AF116775_1" chrStart: 29696
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 12  "Mit.AF110138_1" chrStart: 31744
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 13  "Mit.U02970_1" chrStart: 34816
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 14  "Mit.M68929_1" chrStart: 37888
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 15  "Mit.Y08501_1" chrStart: 40960
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 16  "Mit.X02559_1" chrStart: 44032
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 17  "Mit.AP000397.2_1" chrStart: 48128
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 18  "Mit.AP000396_1" chrStart: 52224
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 19  "Mit.AP000397_1" chrStart: 56320
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 20  "Mit.Z11889_1" chrStart: 60416
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 21  "Mit.K01868_1" chrStart: 64512
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 22  "Mit.AF204057_1" chrStart: 68608
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 23  "Mit.AF008237_1" chrStart: 70656
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 24  "Mit.U03843_1" chrStart: 72704
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 25  "Mit.X54860_1" chrStart: 75776
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 26  "AARH01026927.1.2161_1" chrStart: 78848
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 27  "AC184066.32249.36024_1" chrStart: 81920
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 28  "AC182675.40163.43938_1" chrStart: 86016
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 29  "AF479118.1.3369_1" chrStart: 90112
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 30  "RF00001;5S_rRNA;AARH01014687.1/2464-2583_1" chrStart: 94208
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 31  "RF00001;5S_rRNA;AARH01001806.1/34319-34420_1" chrStart: 95232
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 32  "RF00001;5S_rRNA;AARH01033471.1/420-539_1" chrStart: 96256
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 33  "RF00001;5S_rRNA;AARH01008767.1/1334-1421_1" chrStart: 97280
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 34  "RF00001;5S_rRNA;AARH01017907.1/5509-5627_1" chrStart: 98304
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 35  "RF00001;5S_rRNA;AARH01009279.1/3394-3511_1" chrStart: 99328
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 36  "RF00001;5S_rRNA;AARH01021080.1/430-541_1" chrStart: 100352
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 37  "RF00001;5S_rRNA;AARH01003565.1/327054-327173_1" chrStart: 101376
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 38  "RF00001;5S_rRNA;AARH01009278.1/5033-5152_1" chrStart: 102400
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 39  "RF00001;5S_rRNA;AARH01002105.1/128706-128826_1" chrStart: 103424
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 40  "RF00001;5S_rRNA;AARH01000547.1/42410-42542_1" chrStart: 104448
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 41  "RF00001;5S_rRNA;AARH01003141.1/53152-53267_1" chrStart: 105472
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 42  "RF00001;5S_rRNA;AARH01017907.1/4975-5093_1" chrStart: 106496
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 43  "RF00001;5S_rRNA;AARH01029080.1/511-629_1" chrStart: 107520
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 44  "RF00001;5S_rRNA;AARH01014687.1/5731-5849_1" chrStart: 108544
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 45  "RF00002;5_8S_rRNA;AARH01012340.1/5361-5516_1" chrStart: 109568
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 46  "RF00002;5_8S_rRNA;AARH01011946.1/6359-6498_1" chrStart: 110592
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 47  "Mit.AF058661_1" chrStart: 111616
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 48  "Mit.AF058664_1" chrStart: 113664
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 49  "Mit.AF058669_1" chrStart: 115712
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 50  "Mit.AF058668_1" chrStart: 117760
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 51  "Mit.AF058667_1" chrStart: 119808
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 52  "Mit.AF131093_1" chrStart: 121856
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 53  "Mit.AF058659_1" chrStart: 122880
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 54  "Mit.AF058657_1" chrStart: 124928
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 55  "Mit.U82636_1" chrStart: 126976
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 56  "Mit.U82640_1" chrStart: 129024
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 57  "Mit.U82639_1" chrStart: 131072
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 58  "Mit.U82638_1" chrStart: 133120
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 59  "Mit.AF161094_1" chrStart: 135168
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 60  "Mit.AP000397_2" chrStart: 137216
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 61  "Mit.AF194001_1" chrStart: 139264
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 62  "Mit.AF194003_1" chrStart: 141312
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 63  "Mit.AF194002_1" chrStart: 143360
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 64  "Mit.Y08502_1" chrStart: 145408
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 65  "Mit.AF008237_2" chrStart: 147456
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 66  "Mit.X61277_1" chrStart: 149504
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 67  "Mit.M25119_1" chrStart: 151552
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 68  "Mit.M16859_1" chrStart: 153600
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 69  "Mit.U03843_2" chrStart: 155648
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 70  "Mit.Z11512_1" chrStart: 157696
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 71  "Mit.X54860_2" chrStart: 159744
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 72  "Mit.U82641_1" chrStart: 161792
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 73  "Mit.X15435_1" chrStart: 163840
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 74  "Mit.U82637_1" chrStart: 165888
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 75  "Mit.U02970_2" chrStart: 167936
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 76  "Mit.Z14059_1" chrStart: 169984
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 77  "Mit.AF058675_1" chrStart: 172032
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 78  "Mit.Z14078_1" chrStart: 174080
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 79  "Mit.AF058676_1" chrStart: 176128
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 80  "Mit.M10248_1" chrStart: 178176
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 81  "Mit.AF058677_1" chrStart: 180224
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 82  "Mit.X00794_1" chrStart: 182272
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 83  "Mit.AF058673_1" chrStart: 184320
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 84  "Mit.U96694_1" chrStart: 186368
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 85  "Mit.AF058671_1" chrStart: 188416
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 86  "Mit.AF058672_1" chrStart: 190464
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 87  "Mit.AF058674_1" chrStart: 192512
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 88  "Mit.M68929_2" chrStart: 194560
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 89  "Mit.AF058663_1" chrStart: 196608
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 90  "Mit.AF058660_1" chrStart: 198656
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 91  "Mit.AF058662_1" chrStart: 200704
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 92  "Mit.AF058666_1" chrStart: 202752
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 93  "Mit.AF058665_1" chrStart: 204800
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 94  "Pla.X72584_1" chrStart: 206848
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 95  "Pla.X76084_1" chrStart: 208896
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 96  "Pla.M82900_1" chrStart: 210944
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 97  "Pla.AJ222802_1" chrStart: 212992
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 98  "Pla.X70938_1" chrStart: 215040
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 99  "Pla.AJ245645_1" chrStart: 217088
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 100  "Pla.Z00044_1" chrStart: 219136
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 101  "Pla.X74309_1" chrStart: 221184
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 102  "Pla.Z00044_2" chrStart: 223232
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 103  "Pla.X74006_1" chrStart: 225280
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 104  "Pla.Z00044_3" chrStart: 227328
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 105  "Pla.U24579_1" chrStart: 229376
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 106  "Pla.V00165_1" chrStart: 231424
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 107  "Pla.U24592_1" chrStart: 233472
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 108  "Pla.Y18934_1" chrStart: 235520
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 109  "Pla.AF058678_1" chrStart: 237568
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 110  "Pla.AP000423_1" chrStart: 239616
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 111  "Pla.X04465_1" chrStart: 241664
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 112  "Pla.AP000423_2" chrStart: 243712
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 113  "Pla.X04465_2" chrStart: 245760
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 114  "Pla.U76911_1" chrStart: 247808
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 115  "Pla.U24593_1" chrStart: 249856
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 116  "Pla.AJ271079_1" chrStart: 251904
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 117  "Pla.U24583_1" chrStart: 253952
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 118  "Pla.AJ271079_2" chrStart: 256000
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 119  "Pla.Z81323_1" chrStart: 258048
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 120  "Pla.X06428_1" chrStart: 260096
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 121  "Pla.U24582_1" chrStart: 262144
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 122  "Pla.X07675_1" chrStart: 264192
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 123  "Pla.U24594_1" chrStart: 266240
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 124  "Pla.U24588_1" chrStart: 268288
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 125  "Pla.U24580_1" chrStart: 270336
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 126  "Pla.X75519_1" chrStart: 272384
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 127  "Pla.M37430_1" chrStart: 274432
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 128  "Pla.U24581_1" chrStart: 276480
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 129  "Pla.X15850_1" chrStart: 278528
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 130  "Pla.X51598_1" chrStart: 280576
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 131  "Pla.U24589_1" chrStart: 282624
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 132  "Pla.L39865_1" chrStart: 284672
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 133  "Pla.U03555_1" chrStart: 286720
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 134  "Pla.U24585_1" chrStart: 288768
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 135  "Pla.J01395_1" chrStart: 290816
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 136  "Pla.L37578_1" chrStart: 292864
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 137  "Pla.U24591_1" chrStart: 294912
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 138  "Pla.AF137379_1" chrStart: 296960
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 139  "Pla.L37579_1" chrStart: 299008
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 140  "Pla.U24587_1" chrStart: 301056
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 141  "Pla.AF137379_2" chrStart: 303104
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 142  "Pla.L37580_1" chrStart: 305152
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 143  "Pla.U24590_1" chrStart: 307200
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 144  "Pla.AF166114_1" chrStart: 309248
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 145  "Pla.U67745_1" chrStart: 311296
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 146  "Pla.U24595_1" chrStart: 313344
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 147  "Pla.AF166114_2" chrStart: 315392
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 148  "Pla.X15901_1" chrStart: 317440
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 149  "Pla.U24586_1" chrStart: 319488
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 150  "Pla.X90641_1" chrStart: 321536
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 151  "Pla.AJ239003_1" chrStart: 323584
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 152  "Chl.L07059_1" chrStart: 325632
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 153  "Pla.X12742_1" chrStart: 327680
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 154  "Pla.X86563_1" chrStart: 329728
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 155  "Pla.D17510_1" chrStart: 331776
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 156  "Pla.D11346_1" chrStart: 333824
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 157  "Pla.X86563_2" chrStart: 335872
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 158  "Pla.U24584_1" chrStart: 337920
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 159  "Pla.X65099_1" chrStart: 339968
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 160  "Pla.Z00028_1" chrStart: 342016
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 161  "Pla.U67744_1" chrStart: 344064
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 162  "Pla.X65100_1" chrStart: 346112
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 163  "Pla.U67742_1" chrStart: 348160
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 164  "Pla.U67743_1" chrStart: 350208
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 165  "Pla.D11348_1" chrStart: 352256
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 166  "Pla.U67740_1" chrStart: 354304
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 167  "Pla.U47845_1" chrStart: 356352
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 168  "Pla.D11349_1" chrStart: 358400
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 169  "Pla.U67741_1" chrStart: 360448
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 170  "Pla.X73670_1" chrStart: 362496
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 171  "Pla.X65688_1" chrStart: 364544
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 172  "Pla.X75522_1" chrStart: 366592
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 173  "Pla.AJ007728_1" chrStart: 368640
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 174  "Pla.X65689_1" chrStart: 370688
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 175  "Pla.U24596_1" chrStart: 372736
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 176  "Pla.X58864_1" chrStart: 374784
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 177  "Pla.AB001684_1" chrStart: 376832
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 178  "Pla.M81884_1" chrStart: 378880
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 179  "Pla.D11347_1" chrStart: 380928
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 180  "Pla.X62099_1" chrStart: 382976
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 181  "Pla.X16579_1" chrStart: 385024
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 182  "AARH01006447.44368.45910_1" chrStart: 387072
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 183  "AARH01031135.8.1489_1" chrStart: 389120
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 184  "AARH01014565.4237.5755_1" chrStart: 391168
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 185  "AARH01029534.22.1632_1" chrStart: 393216
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 186  "AARH01011950.18613.20188_1" chrStart: 395264
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 187  "AARH01028577.1.1702_1" chrStart: 397312
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 188  "AARH01032844.13.1376_1" chrStart: 399360
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 189  "AARH01029007.343.1750_1" chrStart: 401408
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 190  "AARH01025907.11.1417_1" chrStart: 403456
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 191  "AARH01029942.1.1517_1" chrStart: 405504
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 192  "AARH01012066.1987.3857_1" chrStart: 407552
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 193  "AARH01028852.1.1702_1" chrStart: 409600
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 194  "AARH01032898.1.1363_1" chrStart: 411648
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 195  "AARH01031532.1.1412_1" chrStart: 413696
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 196  "AC216772.94508.96206_1" chrStart: 415744
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 197  "AC184066.36248.37856_1" chrStart: 417792
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 198  "AC182675.44162.45968_1" chrStart: 419840
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 199  "AC184066.23690.25500_1" chrStart: 421888
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 200  "AC212800.1024.2599_1" chrStart: 423936
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 201  "AF206999.1.1739_1" chrStart: 425984
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 202  "AY652861.1.1706_1" chrStart: 428032
+/scratch/twh58439/2016AthSA/NGSclean/rRNA_only_NR.fas : chr # 203  "DQ371807.1.1771_1" chrStart: 430080
+Number of SA indices: 655130
+Jun 11 13:15:51 ... starting to sort Suffix Array. This may take a long time...
+Number of chunks: 1;   chunks size limit: 5241040 bytes
+Jun 11 13:15:51 ... sorting Suffix Array chunks and saving them to disk...
+Writing 5241040 bytes into rRNA_ref/SA_0 ; empty space on disk = 109071333969920 bytes ... done
+Jun 11 13:15:52 ... loading chunks from disk, packing SA...
+Jun 11 13:15:52 ... finished generating suffix array
+Jun 11 13:15:52 ... generating Suffix Array index
+Jun 11 13:15:52 ... completed Suffix Array index
+Jun 11 13:15:52 ... writing Genome to disk ...
+Writing 432128 bytes into rRNA_ref/Genome ; empty space on disk = 109071333969920 bytes ... done
+SA size in bytes: 2702415
+Jun 11 13:15:52 ... writing Suffix Array to disk ...
+Writing 2702415 bytes into rRNA_ref/SA ; empty space on disk = 109071333969920 bytes ... done
+Jun 11 13:15:52 ... writing SAindex to disk
+Writing 8 bytes into rRNA_ref/SAindex ; empty space on disk = 109071333969920 bytes ... done
+Writing 40 bytes into rRNA_ref/SAindex ; empty space on disk = 109071333969920 bytes ... done
+Writing 1491 bytes into rRNA_ref/SAindex ; empty space on disk = 109071333969920 bytes ... done
+Jun 11 13:15:52 ..... finished successfully
+DONE: Genome generation, EXITING
